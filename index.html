@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funngro - India's Youth & Brands</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: #0b130f;
+            color: #ffffff;
+            line-height: 1.6;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 5%;
+            background-color: #0b130f;
+            border-bottom: 1px solid #1a2e22;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #2ecc71;
+        }
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        nav a:hover, nav a.active {
+            color: #2ecc71;
+        }
+        .page {
+            display: none;
+            padding: 50px 5%;
+        }
+        .page.active {
+            display: block;
+        }
+        .hero {
+            text-align: center;
+            padding: 60px 0;
+        }
+        .hero h1 {
+            font-size: 42px;
+            margin-bottom: 20px;
+            color: #ffffff;
+        }
+        .hero h1 span {
+            color: #2ecc71;
+        }
+        .hero p {
+            font-size: 18px;
+            color: #b0c4de;
+            max-width: 600px;
+            margin: 0 auto 30px auto;
+        }
+        .btn {
+            background-color: #2ecc71;
+            color: #0b130f;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 25px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .btn:hover {
+            background-color: #27ae60;
+        }
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 40px;
+        }
+        .card {
+            background-color: #121c17;
+            padding: 25px;
+            border-radius: 10px;
+            border: 1px solid #1f3528;
+        }
+        .card h3 {
+            color: #2ecc71;
+            margin-bottom: 10px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #080e0a;
+            color: #7f8c8d;
+            margin-top: 50px;
+            border-top: 1px solid #1a2e22;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">Funngro</div>
+        <nav>
+            <a onclick="switchPage('home')" id="nav-home" class="active">Home</a>
+            <a onclick="switchPage('about')" id="nav-about">About Company</a>
+        </nav>
+    </header>
+
+    <!-- PAGE 1: HOME -->
+    <div id="home" class="page active">
+        <section class="hero">
+            <h1>Get Paid by India’s biggest brands with <span>flexible remote opportunities.</span></h1>
+            <p>Seventy lakh young Indians work with India's biggest brands on Funngro — brand promotion, content, referrals, sampling, surveys. Get paid in UPI. Free, forever.</p>
+            <a href="#" class="btn">Download App</a>
+        </section>
+
+        <div class="features">
+            <div class="card">
+                <h3>01. Content Creation</h3>
+                <p>Reels, posts, blogs, photos — for real brand campaigns. Your phone is the studio.</p>
+            </div>
+            <div class="card">
+                <h3>02. Brand Promotion</h3>
+                <p>Share, post, talk about brands you already follow. Get paid for genuine recommendations.</p>
+            </div>
+            <div class="card">
+                <h3>03. Referrals & Surveys</h3>
+                <p>Bring friends to brands they'll like and complete micro tasks from top brands.</p>
+  
